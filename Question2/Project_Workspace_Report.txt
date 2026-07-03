@@ -1,0 +1,37 @@
+Project Workspace Report
+
+Question 2 – Secure Project Workspace Setup
+
+1. Directory Structure
+
+I created a ProjectWorkspace directory containing three folders: Documents, Reports, and Backup. Each folder contains one file related to the project.
+
+------------------------------------------------------------
+
+2. File Permissions
+
+I checked the default permissions using the ls -l command. After that, I changed the permissions of the Documents folder to 700 and the project_plan.txt file to 640 using the chmod command.
+
+------------------------------------------------------------
+
+3. Ownership Details
+
+I verified the ownership information using the whoami and id commands. The output confirmed that the files belong to my current user account.
+
+------------------------------------------------------------
+
+4. Umask Value
+
+I checked the current umask value using the umask command. This value determines the default permissions assigned to newly created files and directories.
+
+------------------------------------------------------------
+
+5. How Permissions Protect Project Data
+
+Restricting file permissions prevents unauthorized users from viewing or modifying important project files. This improves the security of the project workspace.
+
+------------------------------------------------------------
+
+Conclusion
+
+In this task, I created a secure project workspace, organized project files into separate folders, modified file permissions, verified ownership details, and checked the default umask value. This activity helped me understand how Linux file permissions improve data security.
