@@ -1,0 +1,122 @@
+Question 3 - File System and Link Analysis
+
+1. Command
+
+echo "This is the original file." > original.txt
+
+Purpose:
+I used this command to create a text file named original.txt and added some sample content to it.
+
+Observation:
+The file was created successfully with the given text. This file was used to create both hard and symbolic links.
+
+------------------------------------------------------------
+
+2. Command
+
+cat original.txt
+
+Purpose:
+I used this command to display the contents of the original file.
+
+Observation:
+The command displayed the text stored in the file. This confirmed that the file was created correctly.
+
+------------------------------------------------------------
+
+3. Command
+
+ln original.txt hardlink.txt
+
+Purpose:
+I used this command to create a hard link to the original file.
+
+Observation:
+The hard link was created successfully. Both files now point to the same data on the disk.
+
+------------------------------------------------------------
+
+4. Command
+
+ln -s original.txt softlink.txt
+
+Purpose:
+I used this command to create a symbolic link to the original file.
+
+Observation:
+The symbolic link was created successfully. It points to the original file instead of sharing the same inode.
+
+------------------------------------------------------------
+
+5. Command
+
+ls -li
+
+Purpose:
+I used this command to display inode numbers and file details.
+
+Observation:
+The output showed that the original file and hard link had the same inode number, while the symbolic link had a different inode number.
+
+------------------------------------------------------------
+
+6. Command
+
+stat original.txt
+stat hardlink.txt
+stat softlink.txt
+
+Purpose:
+I used these commands to view detailed metadata of all three files.
+
+Observation:
+The metadata showed information such as file size, permissions, timestamps, and inode numbers. It helped compare the three files.
+
+------------------------------------------------------------
+
+7. Command
+
+rm original.txt
+
+Purpose:
+I used this command to delete the original file.
+
+Observation:
+The original file was removed successfully. This allowed me to observe the behavior of both links after deletion.
+
+------------------------------------------------------------
+
+8. Command
+
+cat hardlink.txt
+
+Purpose:
+I used this command to check whether the hard link was still working.
+
+Observation:
+The file content was displayed successfully because the hard link still points to the actual file data.
+
+------------------------------------------------------------
+
+9. Command
+
+cat softlink.txt
+
+Purpose:
+I used this command to check whether the symbolic link was still working.
+
+Observation:
+The command returned an error because the symbolic link points to the deleted original file.
+
+------------------------------------------------------------
+
+10. Command
+
+stat hardlink.txt
+stat softlink.txt
+
+Purpose:
+I used these commands to check the metadata after deleting the original file.
+
+Observation:
+The hard link remained valid, while the symbolic link became broken after the original file was deleted.

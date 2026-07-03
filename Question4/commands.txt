@@ -1,0 +1,131 @@
+Question 4 - File Access and I/O Investigation
+
+1. Command
+
+echo "Linux File I/O Test" > sample.txt
+
+Purpose:
+I used this command to create a sample text file for testing file input and output operations.
+
+Observation:
+The command created a new file named sample.txt with the given text. This file was used in the following I/O operations.
+
+------------------------------------------------------------
+
+2. Command
+
+cat sample.txt
+
+Purpose:
+I used this command to view the contents of the sample file.
+
+Observation:
+The command displayed the text stored in the file. This confirmed that the file was created successfully.
+
+------------------------------------------------------------
+
+3. Command
+
+echo "This is redirected output." > output.txt
+
+Purpose:
+I used this command to redirect the output into a new file.
+
+Observation:
+Instead of displaying the text on the terminal, the command stored it inside output.txt.
+
+------------------------------------------------------------
+
+4. Command
+
+cat output.txt
+
+Purpose:
+I used this command to verify the redirected output.
+
+Observation:
+The contents of output.txt were displayed correctly, confirming that output redirection worked as expected.
+
+------------------------------------------------------------
+
+5. Command
+
+ls invalid_directory 2> error.txt
+
+Purpose:
+I used this command to redirect an error message into a file.
+
+Observation:
+The error message was not displayed on the terminal. Instead, it was stored inside error.txt.
+
+------------------------------------------------------------
+
+6. Command
+
+cat error.txt
+
+Purpose:
+I used this command to check the redirected error message.
+
+Observation:
+The command displayed the error stored inside error.txt, confirming that error redirection was successful.
+
+------------------------------------------------------------
+
+7. Command
+
+ls . invalid_directory > combined_output.txt 2> combined_error.txt
+
+Purpose:
+I used this command to redirect normal output and error messages into separate files.
+
+Observation:
+The normal output was saved in combined_output.txt, while the error message was saved in combined_error.txt.
+
+------------------------------------------------------------
+
+8. Command
+
+cat combined_output.txt
+
+Purpose:
+I used this command to view the redirected output.
+
+Observation:
+The command displayed the normal output stored inside combined_output.txt.
+
+------------------------------------------------------------
+
+9. Command
+
+cat combined_error.txt
+
+Purpose:
+I used this command to view the redirected error message.
+
+Observation:
+The command displayed the error stored inside combined_error.txt.
+
+------------------------------------------------------------
+
+10. Command
+
+ulimit -a
+
+Purpose:
+I used this command to check the resource limits of the current shell.
+
+Observation:
+The output displayed various resource limits such as file size, memory usage, and the number of open files allowed.
+
+------------------------------------------------------------
+
+11. Command
+
+ls -l
+
+Purpose:
+I used this command to verify all the files created during the investigation.
+
+Observation:
+The command displayed the files along with their permissions, ownership, and sizes. It confirmed that all required files were created successfully.

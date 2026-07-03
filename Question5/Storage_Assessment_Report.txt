@@ -1,0 +1,43 @@
+Storage Assessment Report
+
+Question 5 – Storage Health Assessment and Documentation
+
+1. Available Storage Devices
+
+I checked the available storage devices using the storage-related commands available in Git Bash. The output displayed the storage resources accessible in my environment.
+
+------------------------------------------------------------
+
+2. Mounted File Systems
+
+The mount command displayed the mounted file systems currently being used by the operating system. These file systems are used to access different storage locations.
+
+------------------------------------------------------------
+
+3. Disk Usage Statistics
+
+I used the df -h command to view disk usage in a human-readable format. The output showed the total space, used space, available space, and the percentage of storage currently in use.
+
+------------------------------------------------------------
+
+4. Inode Utilization
+
+I attempted to check inode utilization using the df -i command. Depending on Git Bash support, the command either displayed inode information or returned an error because inode statistics are not fully supported on Windows.
+
+------------------------------------------------------------
+
+5. Storage Health Observations
+
+The available storage had sufficient free space for normal operations. The mounted file systems were functioning correctly, and no storage-related issues were observed during the assessment.
+
+------------------------------------------------------------
+
+6. Recommendations
+
+Regularly monitor disk usage to avoid running out of storage space. Remove unnecessary files, maintain backups, and periodically check storage health to ensure smooth system performance.
+
+------------------------------------------------------------
+
+Conclusion
+
+In this activity, I examined the available storage resources, mounted file systems, disk usage, and inode utilization using Linux commands in Git Bash. This exercise helped me understand how Linux manages storage resources and how to monitor system storage effectively.

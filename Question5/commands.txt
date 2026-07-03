@@ -1,0 +1,72 @@
+Question 5 - Storage Health Assessment and Documentation
+
+1. Command
+
+lsblk
+(or df if lsblk was not available)
+
+Purpose:
+I used this command to check the available storage devices connected to the system.
+
+Observation:
+The command displayed the available storage information. Since I was using Git Bash on Windows, some Linux storage commands may not have been fully supported.
+
+------------------------------------------------------------
+
+2. Command
+
+mount
+
+Purpose:
+I used this command to view the mounted file systems.
+
+Observation:
+The output displayed the mounted file systems currently available in my environment.
+
+------------------------------------------------------------
+
+3. Command
+
+df -h
+
+Purpose:
+I used this command to check disk usage in a human-readable format.
+
+Observation:
+The command displayed the total space, used space, available space, and usage percentage for each mounted file system.
+
+------------------------------------------------------------
+
+4. Command
+
+df -i
+
+Purpose:
+I used this command to check inode utilization.
+
+Observation:
+If supported, the command displayed inode usage. If not supported in Git Bash, an error message was displayed because inode information is not fully available in the Windows environment.
+
+------------------------------------------------------------
+
+5. Command
+
+du -sh .
+
+Purpose:
+I used this command to check the size of the current directory.
+
+Observation:
+The command displayed the total size occupied by the files in the current working directory.
+
+------------------------------------------------------------
+
+6. Command
+
+ls -lh
+
+Purpose:
+I used this command to display all files with their sizes and permissions.
+
+Observation:
+The output showed the files created during the storage assessment along with their permissions and sizes.

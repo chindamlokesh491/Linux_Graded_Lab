@@ -1,0 +1,43 @@
+IO Investigation Report
+
+Question 4 – File Access and I/O Investigation
+
+1. Open Files
+
+During this activity, I created and accessed several files such as sample.txt, output.txt, error.txt, combined_output.txt, and combined_error.txt. These files were used to understand how Linux handles file input and output operations.
+
+------------------------------------------------------------
+
+2. File Descriptor Observations
+
+Linux uses file descriptors to manage files during program execution. Standard input, standard output, and standard error are represented by file descriptors 0, 1, and 2 respectively. Output redirection changes where these file descriptors send data.
+
+------------------------------------------------------------
+
+3. Output Redirection
+
+I used the ">" operator to redirect normal command output into a file instead of displaying it on the terminal. This helped me understand how Linux stores command output in files.
+
+------------------------------------------------------------
+
+4. Error Redirection
+
+I used the "2>" operator to redirect error messages into a separate file. This kept the terminal output clean while saving the error information for later review.
+
+------------------------------------------------------------
+
+5. Resource Limits
+
+The ulimit -a command displayed the resource limits of the current shell session. These limits help control system resource usage and improve system stability.
+
+------------------------------------------------------------
+
+6. Linux File I/O
+
+Linux manages file input and output using file descriptors. Standard input receives data from the keyboard, standard output displays information on the screen, and standard error handles error messages. Redirection allows these streams to be stored in files instead of being displayed on the terminal.
+
+------------------------------------------------------------
+
+Conclusion
+
+In this experiment, I learned how Linux handles file access and input/output operations. I practiced output redirection, error redirection, and checked the resource limits of the shell. This activity helped me understand how Linux manages files and command execution more efficiently.

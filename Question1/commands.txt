@@ -1,0 +1,68 @@
+# Question 1 - Commands Used
+
+## 1. Command
+
+whoami
+
+Purpose:
+I used this command to check the username of the account I am currently logged into.
+
+Observation:
+The command displayed my current username. This confirmed that I was working with the correct user account in my Git Bash environment.
+
+
+## 2. Command
+
+`groups`
+
+Purpose:
+I used this command to see which groups my user account belongs to.
+
+Observation:
+The output showed the groups associated with my account. These groups help decide what files and resources the user can access.
+
+
+
+##  3. Command
+
+`echo $SHELL`
+
+Purpose:
+I used this command to check which shell I was using.
+
+Observation:
+The command displayed the Bash shell path. This confirmed that my commands were being executed through the Bash shell.
+
+
+
+## 4. Command
+
+`pwd`
+
+Purpose:
+I used this command to find my current working directory.
+
+Observation:
+The output showed the location of my current folder. It helped me confirm that I was working inside the correct project directory.
+
+
+## 5. Command
+
+`ls -la`
+
+Purpose:
+I used this command to view all files and folders, including hidden files, along with their details.
+
+**Observation:**
+The command listed all the files in my current directory with permissions, owner information, and file sizes. It helped me check the contents of my workspace.
+
+
+## 6. Command
+
+`ping google.com`
+
+Purpose:
+I used this command to check whether my system had an active internet connection.
+
+Observation:
+The command sent requests to Google's server and received replies successfully. This confirmed that the network connection was working properly.

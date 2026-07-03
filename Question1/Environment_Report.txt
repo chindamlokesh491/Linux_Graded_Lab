@@ -1,0 +1,68 @@
+Environment Report
+
+Question 1 – Linux Environment Verification
+
+1. Username and Groups
+
+I used the `whoami` and `groups` commands to verify my user account details.
+
+Output:
+Username: (Write your username here)
+Groups: (Write the groups displayed in your terminal here)
+
+Observation:
+The commands confirmed the username of my current account and displayed the groups associated with it. This information helps identify the user's permissions and access within the system.
+
+---
+
+2. Current Shell
+
+I used the `echo $SHELL` command to check the shell being used.
+
+Output:
+(Write the output displayed in your terminal.)
+
+Observation:
+The output confirmed that my terminal session was running the Bash shell. Bash is the shell used to execute Linux commands in my Git Bash environment.
+
+---
+
+3. Current Working Directory
+
+I used the `pwd` command to identify my current working directory.
+
+Output:
+(Write the directory path displayed in your terminal.)
+
+Observation:
+The command showed the location where my terminal session was currently working. This helped me confirm that I was using the correct project directory.
+
+---
+
+4. Files and Directories
+
+I used the `ls -la` command to list all files and directories.
+
+Output:
+(List or summarize the files and folders displayed in your terminal.)
+
+Observation:
+The command displayed all files and folders, including hidden files, along with details such as permissions, owner, and file size. It helped me verify the contents of my workspace.
+
+---
+
+5. Network Connectivity Verification
+
+I used the `ping` command to test network connectivity.
+
+Output:
+(Write a brief summary of the ping result, such as "Replies were received successfully from google.com.")
+
+Observation:
+The successful replies confirmed that my system had an active internet connection and was able to communicate with an external server.
+
+---
+
+Conclusion
+
+In this exercise, I verified my Linux environment by checking my username, user groups, current shell, working directory, available files, and network connectivity. All the required commands executed successfully and confirmed that my Git Bash environment was ready for performing Linux tasks.

@@ -1,0 +1,31 @@
+Link Analysis Report
+
+Question 3 – File System and Link Analysis
+
+1. Inode Numbers
+
+I created one original file, one hard link, and one symbolic link. Using the ls -li command, I observed that the original file and the hard link shared the same inode number, while the symbolic link had a different inode number.
+
+------------------------------------------------------------
+
+2. Hard Link and Symbolic Link Comparison
+
+A hard link directly points to the same data stored on the disk as the original file. A symbolic link acts like a shortcut and points to the file name or path instead of the actual data.
+
+------------------------------------------------------------
+
+3. Effect of Deleting the Original File
+
+After deleting the original file, the hard link continued to work normally because it still referenced the same inode. The symbolic link stopped working because it pointed to a file that no longer existed.
+
+------------------------------------------------------------
+
+4. Metadata Analysis
+
+I used the stat command to collect metadata for the original file, hard link, and symbolic link. The metadata included inode numbers, permissions, file size, ownership, and timestamps. This information helped me compare the behavior of different types of links.
+
+------------------------------------------------------------
+
+5. Conclusion
+
+This experiment helped me understand the difference between hard links and symbolic links. Hard links remain functional even after the original file is deleted because they share the same inode. Symbolic links depend on the original file, so they become broken when the original file is removed.

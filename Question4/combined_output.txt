@@ -1,0 +1,8 @@
+.:
+IO_Investigation_Report.txt
+combined_error.txt
+combined_output.txt
+commands.txt
+error.txt
+output.txt
+sample.txt
